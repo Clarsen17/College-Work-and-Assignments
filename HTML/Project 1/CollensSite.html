@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collen Larsen's Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS styles -->
+</head>
+<body>
+
+    <header>
+        <h1>Collen Larsen's Portfolio</h1>
+        <nav>
+            <input type="checkbox" id="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Portfolio</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#commission">Commission</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <img src="picture.jpg" alt="Collen's Picture" class="center-image">
+            <h2>About Me</h2>
+            <p>
+                Hi, I'm Collen! I'm a Computer Science major specializing in software development. I have a passion for coding and building impactful projects. When not working with code, I’m actively involved in Huskie Gaming as it's president, organizing esports events and competing.
+            </p>
+            <p>
+                With interests ranging from software architecture to competitive gaming, I aim to bridge the gap between the two worlds, creating robust solutions in tech-driven industries like game development or esports technology.
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="skill-box">
+                    <h3>Programming Languages</h3>
+                    <p>Java, C, C++, JavaScript</p>
+                </div>
+                <div class="skill-box">
+                    <h3>Web Development</h3>
+                    <p>HTML, CSS, Squarespace</p>
+                </div>
+                <div class="skill-box">
+                    <h3>Software Tools</h3>
+                    <p>Git, Visual Studio Code, Dev C++ Linux, Krita</p>
+                </div>
+                <div class="skill-box">
+                    <h3>Database Management</h3>
+                    <p>MySQL, MariaDB</p>
+                </div>
+                <div class="skill-box">
+                    <h3>Cloud Platforms</h3>
+                    <p>AWS, Azure</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="projects" class="section">
+            <h2>Portfolio</h2>
+            <div class="projects-grid">
+                <div class="project">
+                    <a href="https://github.com/Clarsen17" target="_blank">
+                        <img src="Esports.png" alt="Esports Club Management App">
+                    </a>
+                    <h3>Esports Club Management App</h3>
+                    <p>A app using C++, Node.js, and MySQL that hepls with event and player management for esports clubs.</p>
+                </div>
+                <div class="project">
+                    <a href="https://overwatchteamsrcalculator.tiiny.site/" target="_blank">
+                        <img src="OWCalc.png" alt="Overwatch 2 SR Tool">
+                    </a>
+                    <h3>Overwatch 2 SR Tool</h3>
+                    <p>A JavaScript web app that helps track, calculate, and visualize an Overwatch 2 team's average SR.</p>
+                </div>
+                <div class="project">
+                    <a href="https://github.com/Clarsen17" target="_blank">
+                        <img src="Budget.png" alt="Budeget Tracker">
+                    </a>
+                    <h3>Budeget Tracker</h3>
+                    <p>A Webapp made with HTML and JavaScript that can be used to help track income and expenses </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section id="timeline" class="section">
+            <h2>Timeline of Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Service Desk Analyst</h3>
+                        <p><strong>Northern Illinois University</strong></p>
+                        <p><em>September 2021 - Present</em></p>
+                        <p>Provided technical support and assistance to students and staff, troubleshooting and fixing software and hardware issues, and helping maintain critical IT infrastructure.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Tournament Organizer</h3>
+                        <p><strong>Illinois High School Esports Association</strong></p>
+                        <p><em> July 2024 - Present</em></p>
+                        <p>Organized and managed high school esports tournament matches, coordinating with teams to ensure smooth event execution.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Commission Section -->
+        <section id="commission" class="section">
+            <h2>Commission Me</h2>
+            <h3>I'll reach back out to you to let you if its something I can do for you.</h3>
+            <form action="mailto:collenlarsen@hotmail.com" method="post" enctype="text/plain">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="project">Project Description:</label>
+                <textarea id="project" name="project" rows="6" placeholder="Describe your project..." required></textarea>
+
+                <input type="submit" value="Submit Request">
+            </form>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <p>If you'd like to connect, reach out via email or LinkedIn:</p>
+            <table class="contact-table">
+                <tr>
+                    <td>Email:</td>
+                    <td><a href="mailto:collenlarsen@hotmail.com">collenlarsen@hotmail.com</a></td>
+                </tr>
+                <tr>
+                    <td>LinkedIn:</td>
+                    <td><a href="https://www.linkedin.com/in/collen-larsen-25b6232aa/" target="_blank">My LinkedIn Profile</a></td>
+                </tr>
+            </table>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Thank you for viewing my portfolio!</p>
+        <p>&copy; 2024 Collen Larsen. All Rights Reserved.</p>
+        <p>NIU and IHSEA logos are trademarks of their respective owners. This website is for educational purposes only and is not affiliated or endorsed by Northern Illinois University or the Illinois High Schoool Esports Association</p>
+    </footer>
+
+</body>
+</html>

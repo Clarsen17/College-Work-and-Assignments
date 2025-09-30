@@ -1,0 +1,35 @@
+header
+{
+    background-color: red;
+    text-align: center;
+    font-weight: bolder;
+}
+
+hr
+{
+    background-color: black;
+}
+
+
+body
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color:rgb(255, 255, 255)
+}
+
+fieldset
+{
+    background-color:lightgray;
+    color: white;
+    color: black;
+}
+
+legend
+{
+    font-weight: bold;
+    color: black;
+    border: solid;
+    background-color: lightgray;
+    font-size: large;
+}
+

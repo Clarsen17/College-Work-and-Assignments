@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Javascript Application</title>
+</head>
+<body style="color:#2255aa; font-size:120px">
+
+<script type="text/javascript">
+    // Get the current date and time
+    var today = new Date();
+    var hourNow = today.getHours();
+    var greeting;
+
+    // Determine the greeting based on the hour
+    if (hourNow > 18)
+     {
+        greeting = "Good Evening";
+    } 
+    else if (hourNow > 12) 
+    {
+        greeting = "Good Afternoon";
+    } 
+    else if (hourNow > 0) 
+    {
+        greeting = "Good Morning";
+    } 
+    else
+    {
+        greeting = "Welcome";
+    }
+
+    // Display the greeting on the page
+    document.write(greeting);
+</script>
+
+</body>
+</html>

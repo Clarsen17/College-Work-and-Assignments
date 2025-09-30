@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exploding Content</title>
+    <script type="text/javascript">
+        function explodeContent(contentNumber) 
+        {
+            // Get the element by ID
+            var thisContent = document.getElementById(contentNumber);
+
+            // Toggle its display property
+            if (thisContent.style.display === "block") 
+            {
+                thisContent.style.display = "none";
+            } 
+            else 
+            {
+                thisContent.style.display = "block";
+            }
+
+            // Prevent default link behavior
+            return false;
+        }
+    </script>
+    <style type="text/css">
+        .content 
+        {
+            display: none;
+            margin-left: 20px;
+        }
+        a 
+        {
+            text-decoration: none;
+            color: #003377;
+        }
+        a:hover 
+        {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body style="background-color: #eeceee; font-family: Arial; font-size: 30px;">
+    <h1 style="font-size: 60px;">Mega-Corporation</h1>
+    <blockquote>
+        <p><a href="#" onclick="return explodeContent('content1');">Our Story</a></p>
+        <div class="content" id="content1">
+            Lorem ipsum dolor sit amet, ad has suas integre temporibus, per fierent rationibus disputationi no, facete omittam cotidieque te pro. 
+            Iisque repudiare pertinacia eos at. Assum diceret dolorum et qui. Vim nobis iudico explicari no, est noster legendos in, per ut sint primis. 
+            Molestie deseruisse persequeris vel at. Ex sea quem nulla inermis. Alii laboramus eos ut. Odio summo adipisci eum ei, veri facer oum an, 
+            ut sit everti virtute blandit. His an aliquid posidonium temporibus. Enim saperet splendide ad quo, augue oportere assueverit at sea.
+        </div>
+        <p><a href="#" onclick="return explodeContent('content2');">Our Services</a></p>
+        <div class="content" id="content2">
+            Lorem ipsum dolor sit amet, ad has suas integre temporibus, per fierent rationibus disputationi no, facete omittam cotidieque te pro. 
+            Iisque repudiare pertinacia eos at. Assum diceret dolorum et qui. Vim nobis iudico explicari no, est noster legendos in, per ut sint primis. 
+            Molestie deseruisse persequeris vel at. Ex sea quem nulla inermis. Alii laboramus eos ut. Odio summo adipisci eum ei, veri facer oum an, 
+            ut sit everti virtute blandit. His an aliquid posidonium temporibus. Enim saperet splendide ad quo, augue oportere assueverit at sea.
+        </div>
+    </blockquote>
+</body>
+</html>

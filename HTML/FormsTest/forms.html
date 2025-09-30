@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="styles.css">
+    <head>
+        <Title>Forms Demo</Title>
+        <body>
+            <header>
+            <h1> Forms Testing
+                <br>
+                <br>
+                </h1>
+            </header>
+            <form>
+            <!--Name Form-->
+                <fieldset>
+                    <legend> Who are you?</legend>
+                    <label> First Name:
+                        </label>
+                    <input type="text" name="firstname">
+                    <label> Last Name:
+                    <input type="text" name="lastname">
+                    </label>
+                </fieldset>
+                <br>
+
+            <!--Contact Form-->
+                <fieldset>
+                    <legend> Contact Information</legend>
+                    <label> Phone Number: </label>
+                    <input type="number" name="phone-number" min="11">
+                    <label> Email:
+                    <input type="text" name="email">
+                    </label>
+                </fieldset>
+                <br>
+            <!--Adress Form-->
+                <fieldset> 
+                    <legend> Adress</legend>
+                    <label> Street Adress:</label>
+                    <input type="text" name="street-adress">
+                    <label> City & State:</label>
+                    <input type="text" name="city-state">
+                </fieldset>
+                <br>
+            <!--Credentails Form-->
+                <fieldset>
+                    <legend>Credentails</legend>
+                    <label>Username:</label>
+                    <input type="text" name="username">
+                    <label>Password:</label>
+                    <input type="text" name="pw">
+                </fieldset>
+                <br>
+            <!--Here For Form-->
+               <fieldset>
+                <legend> Here For </legend>
+                <label>What are you looking for?</label>
+                <input type="radio" name="looking-for"> Friends
+                <input type="radio" name="looking-for"> Casual
+                <input type="radio" name="looking-for"> Relationship
+                <br>
+                <label>Where do you want to go?</label>
+                <input type="radio" name="where"> Coffeeshop
+                <input type="radio" name="where"> Library
+                <input type="radio" name="where"> Dinner
+                </fieldset>
+                <br>
+            <!--About Form-->
+                <fieldset>
+                    <legend>Tell Us About Yourself</legend>
+                    <lable>Date Of Birth:</lable>
+                    <input type="date" name="DOB">
+                    <br> <br>
+                    <label> Intrests:</label>
+                    <textarea name="Intrests" placeholder="Cooking, music, hiking"></textarea>
+                    <br> <br>
+                    <label>Bio:</label>
+                    <textarea name="Bio" placeholder="I am looking for friends..."></textarea>
+                    <br><br>
+                    <Label>Upload a profile picture:</Label>
+                    <input type="file" name="pfp">
+                    <input type="submit" value="Upload">
+                    <br> <br>
+                    <label>Level of Eduaction:</label>
+                    <select name="Eduaction">
+                        <option value="0"></option> (Please Select One)
+                        <option value="High School"></option>
+                    </select>
+                </fieldset>
+            </form>
+        </body>
+    </head>
+</html>
