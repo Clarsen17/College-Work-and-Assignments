@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Data Giveaway Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Sign Up to Totally Not Have Your Data Harvested</h1>
+    <p>By filling out this form, you’re definitely not allowing us to do anything questionable with your information. Pinky promise.</p>
+
+    <form id="data-harvest-form">
+        <!-- Personal Information Section -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required placeholder="e.g., John Doe">
+
+            <label for="password">Password (we won’t look… maybe):</label>
+            <input type="password" id="password" name="password" required placeholder="Choose a strong password">
+
+            <label for="email">Email (so we can flood your inbox):</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com">
+
+            <label for="website">Website (we’d love to see it… for research):</label>
+            <input type="url" id="website" name="website" placeholder="https://example.com">
+
+            <label for="dob">Date of Birth (optional, just for our records):</label>
+            <input type="date" id="dob" name="dob">
+        </fieldset>
+
+        <!-- Interests Section -->
+        <fieldset>
+            <legend>Your Interests (Just Curious)</legend>
+            <label for="color">Favorite Color:</label>
+            <select id="color" name="color" required>
+                <option value="" disabled selected>Select a color...</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="yellow">Yellow</option>
+                <option value="purple">Purple</option>
+                <option value="black">Black</option>
+            </select>
+
+            <p>Would you like to receive spam?</p>
+            <div class="radio-options">
+                <span>
+                    <input type="radio" id="spam-yes" name="spam" value="yes" required>
+                    <label for="spam-yes">Yes, bring it on!</label>
+                </span>
+                <span>
+                    <input type="radio" id="spam-no" name="spam" value="no" required>
+                    <label for="spam-no">No, please spare me.</label>
+                </span>
+            </div>
+            <br>
+            <label for="comments">Any Additional Comments:</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Feel free to vent here..."></textarea>
+        </fieldset>
+
+        <!-- Consent Section -->
+        <fieldset>
+            <legend>Consent (It's Totally Optional... Sort Of)</legend>
+            <label>Are you okay with us doing the following?</label>
+            <div class="checkbox-options">
+                <span>
+                    <input type="checkbox" id="track" name="consent" value="track">
+                    <label for="track">Track your every online move</label>
+                </span>
+                <span>
+                    <input type="checkbox" id="ads" name="consent" value="ads">
+                    <label for="ads">Bombard you with "targeted" ads</label>
+                </span>
+                <span>
+                    <input type="checkbox" id="steal-data" name="consent" value="steal">
+                    <label for="steal-data">Steal my data (just kidding… or are we?)</label>
+                </span>
+            </div>
+        </fieldset>
+
+        <!-- File Upload Section -->
+        <fieldset>
+            <legend>File Upload (Send Us Something Fun)</legend>
+            <label for="upload">Upload a Picture of Your Favorite Meme:</label>
+            <input type="file" id="upload" name="upload" accept="image/*">
+        </fieldset>
+
+        <button type="submit">Submit Your Data (I Mean, Form)</button>
+    </form>
+</body>
+</html>

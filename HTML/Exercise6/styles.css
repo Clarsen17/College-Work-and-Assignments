@@ -1,0 +1,91 @@
+/* Styling for the table container */
+.table-container {
+    width: 80%;
+    margin: 30px auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Main title and subtitle styling */
+h1 {
+    font-size: 1.75em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Overall table styling */
+table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-size: 16px;
+    text-align: left;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table headers */
+th {
+    background-color: #f7f7f7;
+    color: #333;
+    font-weight: bold;
+    padding: 15px;
+    border-bottom: 2px solid #ddd;
+    text-align: center;
+}
+
+/* Table data cells */
+td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Description rows (spanning all columns) */
+.description {
+    text-align: center;
+    font-style: italic;
+    color: #777;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Hover effect for rows */
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Center align specific content in columns */
+td:nth-child(2), td:nth-child(3), td:nth-child(4) {
+    text-align: center;
+}
+
+/* Styling for the disclaimer row */
+.disclaimer {
+    font-size: 0.9em;
+    color: #777;
+    text-align: center;
+    padding: 15px;
+    font-style: italic;
+    background-color: #f7f7f7;
+    border-top: 2px solid #ddd;
+}
+
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+td {
+    vertical-align: middle;
+}
+
